@@ -1,10 +1,7 @@
 # 📊 DSA Visualizer
 
-![GitHub repo size](https://img.shields.io/github/repo-size/kanakrajtomar/dsa-visualizer)
 ![GitHub stars](https://img.shields.io/github/stars/kanakrajtomar/dsa-visualizer?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/kanakrajtomar/dsa-visualizer?style=social)
-![GitHub license](https://img.shields.io/github/license/kanakrajtomar/dsa-visualizer)
-![GitHub last commit](https://img.shields.io/github/last-commit/kanakrajtomar/dsa-visualizer)
 
 ---
 
