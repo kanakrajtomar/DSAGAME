@@ -11,12 +11,6 @@ It aims to help learners understand complex DSA concepts through **interactive, 
 
 ---
 
-## ✨ Demo
-
-> 🎥 **Live Preview / Demo Link** (Add your Vercel/Netlify/GitHub Pages link here)
-
-![Demo GIF](https://github.com/kanakrajtomar/dsa-visualizer/assets/demo-animation.gif)  
-> *(Replace with actual screen-recorded GIF or image)*
 
 ---
 
