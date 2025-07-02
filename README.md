@@ -1,7 +1,6 @@
 # 📊 DSA Visualizer
 
-![GitHub stars](https://img.shields.io/github/stars/kanakrajtomar/dsa-visualizer?style=social)
-![GitHub forks](https://img.shields.io/github/forks/kanakrajtomar/dsa-visualizer?style=social)
+
 
 ---
 
