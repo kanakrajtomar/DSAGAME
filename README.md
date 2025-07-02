@@ -1,31 +1,110 @@
-# Three js animation example
-<!--
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+# 📊 DSA Visualizer
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kanakrajtomars-projects/v0-three-js-animation-example)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/W0kBT4SaO4O)
+![GitHub repo size](https://img.shields.io/github/repo-size/kanakrajtomar/dsa-visualizer)
+![GitHub stars](https://img.shields.io/github/stars/kanakrajtomar/dsa-visualizer?style=social)
+![GitHub forks](https://img.shields.io/github/forks/kanakrajtomar/dsa-visualizer?style=social)
+![GitHub license](https://img.shields.io/github/license/kanakrajtomar/dsa-visualizer)
+![GitHub last commit](https://img.shields.io/github/last-commit/kanakrajtomar/dsa-visualizer)
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🧠 Overview
 
-## Deployment
+**DSA Visualizer** is a web-based platform designed to **visualize Data Structures and Algorithms (DSA)** with the help of **3D animations** powered by [Three.js](https://threejs.org/) and an intuitive interface built with **React.js**.  
+It aims to help learners understand complex DSA concepts through **interactive, visual learning**.
 
-Your project is live at:
+---
 
-**[https://vercel.com/kanakrajtomars-projects/v0-three-js-animation-example](https://vercel.com/kanakrajtomars-projects/v0-three-js-animation-example)**
+## ✨ Demo
 
-## Build your app
+> 🎥 **Live Preview / Demo Link** (Add your Vercel/Netlify/GitHub Pages link here)
 
-Continue building your app on:
+![Demo GIF](https://github.com/kanakrajtomar/dsa-visualizer/assets/demo-animation.gif)  
+> *(Replace with actual screen-recorded GIF or image)*
 
-**[https://v0.dev/chat/projects/W0kBT4SaO4O](https://v0.dev/chat/projects/W0kBT4SaO4O)**
+---
 
-## How It Works
+## 🧩 Features
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
--->
+- 🌀 3D animations of core DSA concepts
+- ⚛️ Built with modern React.js (hooks & modular structure)
+- 🌐 Fast loading via Vite/Webpack (choose what you used)
+- 🎮 Real-time interactivity with Three.js
+- 🎨 Clean, responsive UI
+
+---
+
+## 🚀 Tech Stack
+
+| Technology     | Purpose                              |
+|----------------|--------------------------------------|
+| React.js       | Frontend framework                   |
+| Three.js       | 3D animations and rendering          |
+| Vite/Webpack   | Build tool & bundler                 |
+| CSS/Tailwind   | Styling and layout (if used)         |
+| GitHub Pages / Vercel | Hosting                        |
+
+---
+
+## 📁 Project Structure
+
+/src
+├── components/ # React UI components
+├── animations/ # Three.js scenes & logic
+├── assets/ # Static files: icons, images, models
+├── App.jsx # Main app wrapper
+└── main.jsx # Entry point
+
+
+Edit
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+
+
+git clone https://github.com/kanakrajtomar/dsa-visualizer.git
+cd dsa-visualizer
+2. Install dependencies
+
+npm install
+3. Start local server
+
+npm run dev
+Navigate to http://localhost:5173 (or the port shown in terminal)
+
+📦 Build for Production
+
+npm run build
+🛠️ Modules Implemented
+✅ Arrays
+
+✅ Linked Lists
+
+✅ Stacks / Queues
+
+✅ Trees (Binary Tree, BST)
+
+✅ Sorting Algorithms (Bubble, Merge, Quick)
+
+✅ Graph Traversals (DFS, BFS)
+
+More modules in progress!
+
+🙋‍♂️ Contributing
+Feel free to fork the project, open issues, and submit PRs.
+
+# Fork > Clone > Create branch > Commit > Push > PR
+
+📜 License
+Licensed under the MIT License.
+
+👨‍💻 Author
+Kanak Raj Tomar
+🌐 Portfolio
+🐱 GitHub
+💼 LinkedIn
+
+⭐️ If you like this project, give it a star and share it with your friends learning DSA!
