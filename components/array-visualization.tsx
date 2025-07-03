@@ -22,7 +22,7 @@ export default function ArrayVisualization() {
 
     // Scene setup
     const scene = new THREE.Scene()
-    scene.background = new THREE.Color(0xf0f8ff)
+    scene.background = new THREE.Color(0xf8fafc)
     sceneRef.current = scene
 
     // Camera setup
@@ -42,14 +42,14 @@ export default function ArrayVisualization() {
     const ambientLight = new THREE.AmbientLight(0x404040, 0.6)
     scene.add(ambientLight)
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8)
+    const directionalLight = new THREE.DirectionalLight(0x3b82f6, 0.8)
     directionalLight.position.set(10, 10, 5)
     directionalLight.castShadow = true
     scene.add(directionalLight)
 
     // Ground plane
     const groundGeometry = new THREE.PlaneGeometry(20, 10)
-    const groundMaterial = new THREE.MeshLambertMaterial({ color: 0xcccccc })
+    const groundMaterial = new THREE.MeshLambertMaterial({ color: 0xe2e8f0 })
     const ground = new THREE.Mesh(groundGeometry, groundMaterial)
     ground.rotation.x = -Math.PI / 2
     ground.position.y = -2
@@ -89,7 +89,7 @@ export default function ArrayVisualization() {
     arrayData.forEach((value, index) => {
       const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5)
       const material = new THREE.MeshLambertMaterial({
-        color: new THREE.Color().setHSL(0.6, 0.7, 0.6),
+        color: new THREE.Color(0x3b82f6),
       })
       const cube = new THREE.Mesh(geometry, material)
 
@@ -108,7 +108,7 @@ export default function ArrayVisualization() {
       canvas.height = 128
       context.fillStyle = "white"
       context.fillRect(0, 0, 128, 128)
-      context.fillStyle = "black"
+      context.fillStyle = "#1e40af"
       context.font = "32px Arial"
       context.textAlign = "center"
       context.fillText(value.toString(), 64, 70)
@@ -133,7 +133,7 @@ export default function ArrayVisualization() {
     const originalColor = (cube.material as THREE.MeshLambertMaterial).color.clone()
 
     // Highlight and lift the accessed element
-    const highlightColor = new THREE.Color(0xff6b6b)
+    const highlightColor = new THREE.Color(0xef4444)
     ;(cube.material as THREE.MeshLambertMaterial).color = highlightColor
 
     // Animate upward movement
@@ -269,9 +269,9 @@ export default function ArrayVisualization() {
         </div>
       </div>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-        <h3 className="font-semibold mb-2">Array Characteristics:</h3>
-        <ul className="text-sm space-y-1">
+      <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+        <h3 className="font-semibold mb-2 text-blue-900">Array Characteristics:</h3>
+        <ul className="text-sm space-y-1 text-blue-800">
           <li>• Elements are stored in contiguous memory locations</li>
           <li>• Direct access to any element using index: O(1)</li>
           <li>• Fixed size in most implementations</li>

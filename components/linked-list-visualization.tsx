@@ -40,7 +40,7 @@ export default function LinkedListVisualization() {
 
     // Scene setup
     const scene = new THREE.Scene()
-    scene.background = new THREE.Color(0xf0fff0)
+    scene.background = new THREE.Color(0xf8fafc)
     sceneRef.current = scene
 
     // Camera setup
@@ -60,14 +60,14 @@ export default function LinkedListVisualization() {
     const ambientLight = new THREE.AmbientLight(0x404040, 0.6)
     scene.add(ambientLight)
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8)
+    const directionalLight = new THREE.DirectionalLight(0x10b981, 0.8)
     directionalLight.position.set(10, 10, 5)
     directionalLight.castShadow = true
     scene.add(directionalLight)
 
     // Ground plane
     const groundGeometry = new THREE.PlaneGeometry(25, 10)
-    const groundMaterial = new THREE.MeshLambertMaterial({ color: 0xcccccc })
+    const groundMaterial = new THREE.MeshLambertMaterial({ color: 0xe2e8f0 })
     const ground = new THREE.Mesh(groundGeometry, groundMaterial)
     ground.rotation.x = -Math.PI / 2
     ground.position.y = -2
@@ -122,7 +122,7 @@ export default function LinkedListVisualization() {
       // Create main cube for data
       const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5)
       const material = new THREE.MeshLambertMaterial({
-        color: new THREE.Color().setHSL(0.3, 0.7, 0.6),
+        color: new THREE.Color(0x10b981),
       })
       const cube = new THREE.Mesh(geometry, material)
       cube.castShadow = true
@@ -132,7 +132,7 @@ export default function LinkedListVisualization() {
       // Create pointer box
       const pointerGeometry = new THREE.BoxGeometry(0.8, 0.8, 0.8)
       const pointerMaterial = new THREE.MeshLambertMaterial({
-        color: new THREE.Color().setHSL(0.1, 0.8, 0.7),
+        color: new THREE.Color(0x059669),
       })
       const pointerCube = new THREE.Mesh(pointerGeometry, pointerMaterial)
       pointerCube.position.set(1.2, 0, 0)
@@ -153,7 +153,7 @@ export default function LinkedListVisualization() {
       canvas.height = 64
       context.fillStyle = "white"
       context.fillRect(0, 0, 128, 64)
-      context.fillStyle = "black"
+      context.fillStyle = "#065f46"
       context.font = "24px Arial"
       context.textAlign = "center"
       context.fillText(value.toString(), 64, 40)
@@ -172,14 +172,14 @@ export default function LinkedListVisualization() {
 
         // Arrow shaft
         const shaftGeometry = new THREE.CylinderGeometry(0.05, 0.05, 2)
-        const shaftMaterial = new THREE.MeshLambertMaterial({ color: 0x666666 })
+        const shaftMaterial = new THREE.MeshLambertMaterial({ color: 0x6b7280 })
         const shaft = new THREE.Mesh(shaftGeometry, shaftMaterial)
         shaft.rotation.z = Math.PI / 2
         arrowGroup.add(shaft)
 
         // Arrow head
         const headGeometry = new THREE.ConeGeometry(0.15, 0.3)
-        const headMaterial = new THREE.MeshLambertMaterial({ color: 0x666666 })
+        const headMaterial = new THREE.MeshLambertMaterial({ color: 0x6b7280 })
         const head = new THREE.Mesh(headGeometry, headMaterial)
         head.position.x = 1.15
         head.rotation.z = -Math.PI / 2
@@ -196,7 +196,7 @@ export default function LinkedListVisualization() {
         const nullContext = nullCanvas.getContext("2d")!
         nullCanvas.width = 64
         nullCanvas.height = 32
-        nullContext.fillStyle = "red"
+        nullContext.fillStyle = "#ef4444"
         nullContext.fillRect(0, 0, 64, 32)
         nullContext.fillStyle = "white"
         nullContext.font = "16px Arial"
@@ -226,7 +226,7 @@ export default function LinkedListVisualization() {
       const nodeGroup = nodesRef.current[i]
       const cube = nodeGroup.children[0] as THREE.Mesh
       const originalColor = (cube.material as THREE.MeshLambertMaterial).color.clone()
-      ;(cube.material as THREE.MeshLambertMaterial).color = new THREE.Color(0xff6b6b)
+      ;(cube.material as THREE.MeshLambertMaterial).color = new THREE.Color(0xef4444)
 
       // Animate node movement
       const originalY = nodeGroup.position.y
@@ -324,9 +324,9 @@ export default function LinkedListVisualization() {
         </div>
       </div>
 
-      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-        <h3 className="font-semibold mb-2">Linked List Characteristics:</h3>
-        <ul className="text-sm space-y-1">
+      <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+        <h3 className="font-semibold mb-2 text-green-900">Linked List Characteristics:</h3>
+        <ul className="text-sm space-y-1 text-green-800">
           <li>• Elements (nodes) are stored anywhere in memory</li>
           <li>• Each node contains data and a pointer to the next node</li>
           <li>• Sequential access only: O(n) to reach any element</li>

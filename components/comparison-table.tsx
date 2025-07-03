@@ -73,7 +73,7 @@ export default function ComparisonTable() {
                 <div className="flex items-center gap-2">
                   <span>{comparison.array}</span>
                   {comparison.arrayBetter && (
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                    <Badge variant="secondary" className="bg-green-100 text-green-800">
                       Better
                     </Badge>
                   )}
@@ -83,7 +83,7 @@ export default function ComparisonTable() {
                 <div className="flex items-center gap-2">
                   <span>{comparison.linkedList}</span>
                   {!comparison.arrayBetter && (
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
                       Better
                     </Badge>
                   )}
@@ -95,9 +95,9 @@ export default function ComparisonTable() {
       </Table>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-          <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">When to Use Arrays</h3>
-          <ul className="text-sm space-y-2">
+        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h3 className="font-semibold text-blue-900 mb-3">When to Use Arrays</h3>
+          <ul className="text-sm space-y-2 text-blue-800">
             <li className="flex items-start gap-2">
               <span className="text-blue-600 mt-1">•</span>
               <span>When you need frequent random access to elements</span>
@@ -121,9 +121,9 @@ export default function ComparisonTable() {
           </ul>
         </div>
 
-        <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-          <h3 className="font-semibold text-green-800 dark:text-green-200 mb-3">When to Use Linked Lists</h3>
-          <ul className="text-sm space-y-2">
+        <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+          <h3 className="font-semibold text-green-900 mb-3">When to Use Linked Lists</h3>
+          <ul className="text-sm space-y-2 text-green-800">
             <li className="flex items-start gap-2">
               <span className="text-green-600 mt-1">•</span>
               <span>When frequent insertion/deletion at the beginning</span>
@@ -148,9 +148,9 @@ export default function ComparisonTable() {
         </div>
       </div>
 
-      <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
-        <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">Key Takeaway</h3>
-        <p className="text-sm">
+      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+        <h3 className="font-semibold mb-2">Key Takeaway</h3>
+        <p className="text-sm text-gray-700">
           The choice between arrays and linked lists depends on your specific use case. Arrays excel at random access
           and memory efficiency, while linked lists shine in dynamic scenarios with frequent insertions and deletions.
           Understanding these trade-offs helps you make informed decisions in algorithm design and data structure

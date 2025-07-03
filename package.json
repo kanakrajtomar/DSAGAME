@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-select": "latest",
     "@radix-ui/react-tabs": "latest",
     "@types/three": "^0.158.0",
     "class-variance-authority": "^0.7.1",
